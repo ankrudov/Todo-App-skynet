@@ -1,10 +1,15 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
 import Submit from './components/SubmitComponent';
 
+
 function App() {
   return (
-    <Submit />
+    <div>
+      <h1>To-do app</h1>
+      <Submit/>
+    </div>
+
    
   );
 }
