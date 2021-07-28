@@ -15,7 +15,29 @@ class Submit extends Component{
         this.handleInput = this.handleInput.bind(this);
         this.addItem = this.addItem.bind(this);
         this.deleteItem = this.deleteItem.bind(this)
+        this.saveStateToLocalStorage = this.saveStateToLocalStorage.bind(this)
     }
+
+    
+
+    //save data to local storage
+    saveStateToLocalStorage= ()=>{
+        localStorage.setItem('state',JSON.stringify(this.state));
+    }
+
+    //fetch data from local storage
+    getStateFromLocalStorage = ()=> {
+        let data = localStorage.getItem('state');
+        if(data !==undefined){
+            this.setState(JSON.parse(data));
+        }
+    }
+
+    //fetch data from local storage
+    componentDidMount(){
+        this.getStateFromLocalStorage();
+    }
+
 
     handleInput(entry){
         this.setState({
