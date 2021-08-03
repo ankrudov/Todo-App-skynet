@@ -18,7 +18,6 @@ class Submit extends Component{
         this.saveStateToLocalStorage = this.saveStateToLocalStorage.bind(this)
     }
 
-    
 
     //save data to local storage
     saveStateToLocalStorage= ()=>{
@@ -69,7 +68,7 @@ class Submit extends Component{
     deleteItem(key){
         const filteredItems = this.state.items.filter(item=> item.key!==key);
         this.setState({
-            items:filteredItems            
+            items:filteredItems     
         })
     }
 
@@ -86,6 +85,7 @@ class Submit extends Component{
                         value={this.state.currentItem.text}
                         onChange={this.handleInput}/>
                         <button type="submit">Add</button>
+                        <button onClick={this.saveStateToLocalStorage}>Save Data</button>
                     </form>
                 </header>
                 <TodoList
