@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import { setDataLink } from 'skynet-js/dist/cjs/skydb';
 import TodoList from './ListComponent';
 
 
@@ -85,7 +86,7 @@ class Submit extends Component{
                         value={this.state.currentItem.text}
                         onChange={this.handleInput}/>
                         <button type="submit">Add</button>
-                        <button onClick={this.saveStateToLocalStorage}>Save Data</button>
+                        <button onClick={this.saveStateToLocalStorage}>Save changes</button>
                     </form>
                 </header>
                 <TodoList

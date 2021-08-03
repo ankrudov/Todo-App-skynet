@@ -1,9 +1,8 @@
 body{
-  background-color: aliceblue;
+  background-color:black !important;
 }
 
-.app{
-  background-color: antiquewhite;
-  min-height: 400px;
-  width: 500px;
+.todo-title{
+  color: aliceblue;
+  
 }
