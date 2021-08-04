@@ -1,0 +1,52 @@
+.container{
+    margin-bottom: 30px;
+    margin-top: auto;
+
+}
+.todo-form{
+    margin-left:50px;
+    
+}
+
+/* card */
+.todo-card{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    width: 500px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    min-height: 200px;
+    border-radius: 10px;
+    background: radial-gradient(#76b2fe, #b69efe) !important;  
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    
+}
+.todo-card:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.card-title{
+    font-size: 20px;
+    color: black;
+    background-color: azure;
+
+}
+
+.card-text{
+    font-size: 30px;
+    color: black;
+}
+
+.delete-button{
+    background-color: rgb(149, 48, 48) !important;
+    margin: 0 auto;
+    height: 40px;
+    width: 50%;
+}
+.delete-button:hover{
+    background-color:red !important;
+
+}

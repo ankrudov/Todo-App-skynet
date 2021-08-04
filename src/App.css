@@ -1,8 +1,23 @@
 body{
-  background-color:black !important;
+  background-image: url('https://www.techrepublic.com/a/hub/i/r/2020/04/21/92fefa52-5abd-4cb6-88ad-f440a9952a8b/resize/1200x900/159117c93c0182e2d4d4f279b3fbbc40/ca-9.jpg') !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .todo-title{
   color: aliceblue;
+  margin: 35px;
+  font-size: 5em;
+  
+}
+
+.todo-subtitle{
+  color: aliceblue;
+  margin: 35px;
+  font-size: 2em;
   
 }

@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { setDataLink } from 'skynet-js/dist/cjs/skydb';
 import TodoList from './ListComponent';
+import  './componentstyling.css';
 
 
 class Submit extends Component{
@@ -76,9 +77,11 @@ class Submit extends Component{
    
     render(){
         return(
-            <div>
+            <div className="container">
+                <h1 className='todo-title'>To-do app</h1>
+                <p className='todo-subtitle' >Practice Crud APP, Changes must be saved before refreshing in order to save to state.</p>
                 <header>
-                    <form id="to-do-form" onSubmit={this.addItem}>
+                    <form className='todo-form'id="to-do-form" onSubmit={this.addItem}>
                         <input 
                         type="text" 
                         className="todo-input"

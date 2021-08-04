@@ -6,7 +6,6 @@ import Submit from './components/SubmitComponent';
 function App() {
   return (
     <div>
-      <h1 className='todo-title'>To-do app</h1>
       <Submit/>
     </div>
 
